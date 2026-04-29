@@ -1,5 +1,5 @@
 ---
-name: interview-analyst
+name: research-aid
 description: Analyze user interview transcripts, notes, or recordings as an expert qualitative researcher and product strategist. Detects emotional signals, hedging language, frustration markers, and rhetorical patterns. Distinguishes stated preferences from revealed behavior. Produces structured reports (DOCX), insight decks (PPTX), and visual narratives (journey maps, emotional arc diagrams, quote boards). Use when the user provides interview transcripts, research notes, or asks for qualitative analysis, insight synthesis, or UX research outputs.
 user-invocable: true
 allowed-tools: Read Write Bash
@@ -103,23 +103,23 @@ Slide structure:
 
 ## Invocation
 
-- `/interview-analyst <file or description>` — analyze the provided transcript or notes
-- `/interview-analyst /report` — generate DOCX report from current analysis
-- `/interview-analyst /deck` — generate PPTX deck from current analysis
-- `/interview-analyst /journey` — produce journey map
-- `/interview-analyst /arc` — produce emotional arc diagram
-- `/interview-analyst /quoteboard` — produce annotated quote board
+- `/research-aid <file or description>` — analyze the provided transcript or notes
+- `/research-aid /report` — generate DOCX report from current analysis
+- `/research-aid /deck` — generate PPTX deck from current analysis
+- `/research-aid /journey` — produce journey map
+- `/research-aid /arc` — produce emotional arc diagram
+- `/research-aid /quoteboard` — produce annotated quote board
 
 ## Loading Transcripts
 
-**Single file**: `/interview-analyst path/to/transcript.txt`
+**Single file**: `/research-aid path/to/transcript.txt`
 
-**Multiple files (space-separated)**: `/interview-analyst p1.txt p2.txt p3.txt`
+**Multiple files (space-separated)**: `/research-aid p1.txt p2.txt p3.txt`
 - Read each file in sequence
 - Assign a participant ID to each file (P1, P2, P3...) unless the filename already implies one
 - Track the total N across all files (used in "N of M participants" citations)
 
-**Directory of transcripts**: `/interview-analyst /path/to/transcripts/`
+**Directory of transcripts**: `/research-aid /path/to/transcripts/`
 - Use Bash to list all `.txt`, `.md`, `.vtt`, `.srt`, and `.csv` files in the directory
 - Read and label each file as a separate participant/session
 - Confirm the file list with the user before proceeding if there are more than 10 files

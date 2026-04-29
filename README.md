@@ -30,12 +30,12 @@ If the output contradicts your instincts, trust your instincts first. Then use t
 
 | What you type | What you get |
 |---|---|
-| `/interview-analyst /path/to/folder` | Full synthesis report in the conversation |
-| `/interview-analyst /report` | A Word document (requires pandoc) |
-| `/interview-analyst /deck` | A slide deck (requires python-pptx) |
-| `/interview-analyst /journey` | A journey map |
-| `/interview-analyst /arc` | An emotional arc diagram |
-| `/interview-analyst /quoteboard` | Quotes grouped by theme with emotional tags |
+| `/research-aid /path/to/folder` | Full synthesis report in the conversation |
+| `/research-aid /report` | A Word document (requires pandoc) |
+| `/research-aid /deck` | A slide deck (requires python-pptx) |
+| `/research-aid /journey` | A journey map |
+| `/research-aid /arc` | An emotional arc diagram |
+| `/research-aid /quoteboard` | Quotes grouped by theme with emotional tags |
 
 ---
 
@@ -46,12 +46,12 @@ You'll need [Claude Code](https://claude.ai/code) installed first.
 Then run this in your terminal:
 
 ```bash
-mkdir -p ~/.claude/skills/interview-analyst && \
-  curl -o ~/.claude/skills/interview-analyst/SKILL.md \
+mkdir -p ~/.claude/skills/research-aid && \
+  curl -o ~/.claude/skills/research-aid/SKILL.md \
   https://raw.githubusercontent.com/radha-nath/ux-analyst/main/SKILL.md
 ```
 
-Restart Claude Code and the `/interview-analyst` command will be available.
+Restart Claude Code and the `/research-aid` command will be available.
 
 If you want Word doc or slide deck exports, you'll also need:
 - [pandoc](https://pandoc.org/installing.html) for Word documents
@@ -63,13 +63,13 @@ If you want Word doc or slide deck exports, you'll also need:
 
 **Analyze a whole folder of transcripts:**
 ```
-/interview-analyst /path/to/your/transcripts/
+/research-aid /path/to/your/transcripts/
 ```
 It will list the files it finds and ask you to confirm before starting.
 
 **Analyze one file:**
 ```
-/interview-analyst path/to/interview.csv
+/research-aid path/to/interview.csv
 ```
 
 **At the start, it will ask you three things:**
