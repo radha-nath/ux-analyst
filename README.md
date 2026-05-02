@@ -16,17 +16,18 @@ If the output contradicts your instincts, trust your instincts first. Then use t
 
 ---
 
-## What it does
+## The two skills
 
-- Reads transcripts from a folder or individual files (CSV, TXT, plain notes, or subtitle files from recordings)
-- Asks you for your research brief, early instincts, and preferred output style before it starts
-- Detects emotional signals, hedging language, frustration markers, and enthusiasm in how participants spoke
+### `/research-study-aid` — Multi-transcript synthesis
+
+Use this when you've finished a research study and want to synthesize across multiple interviews.
+
+- Reads a folder of transcripts (CSV, TXT, VTT, SRT) or individual files
+- Asks for your research brief, early instincts, and preferred output style before it starts
+- Detects emotional signals, hedging language, frustration markers, and enthusiasm
 - Separates what participants *said they do* from what their stories *reveal they actually do*
 - Makes sure every participant is represented — no voice gets left out
-- Frames everything as signals and interpretations, never conclusions — always with sample size acknowledged
-- Follows your narrative lead; will flag when the data points elsewhere, but defers to your judgment
-
-### What you can generate
+- Frames everything as signals and interpretations, never conclusions
 
 | What you type | What you get |
 |---|---|
@@ -39,7 +40,25 @@ If the output contradicts your instincts, trust your instincts first. Then use t
 
 ---
 
-## How to install it
+### `/coffee-chat` — Single interview debrief
+
+Use this right after a continuous discovery interview when you want to turn your notes into something shareable with the team.
+
+- Takes a transcript, raw notes, or a video file as input
+- Asks four questions about your experience in the conversation before it starts
+- Produces a member story, key highlights with direct quotes, and sized product opportunities
+- Outputs a Slack-ready summary alongside the full debrief
+- Supports video input via Whisper transcription
+
+| What you type | What you get |
+|---|---|
+| `/coffee-chat` | Start the debrief flow (no transcript yet) |
+| `/coffee-chat path/to/transcript.csv` | Load transcript first, then ask questions |
+| `/coffee-chat path/to/recording.mp4` | Transcribe video first, then ask questions |
+
+---
+
+## How to install
 
 You'll need [Claude Code](https://claude.ai/code) installed first.
 
@@ -48,37 +67,19 @@ Then run this in your terminal:
 ```bash
 mkdir -p ~/.claude/skills/research-aid && \
   curl -o ~/.claude/skills/research-aid/SKILL.md \
-  https://raw.githubusercontent.com/radha-nath/ux-analyst/main/SKILL.md
+  https://raw.githubusercontent.com/radha-nath/research-aid/main/SKILL.md && \
+  curl -o ~/.claude/skills/research-aid/COFFEE-CHAT-SKILL.md \
+  https://raw.githubusercontent.com/radha-nath/research-aid/main/COFFEE-CHAT-SKILL.md
 ```
 
-Restart Claude Code and the `/research-study-aid` command will be available.
+Restart Claude Code and both `/research-study-aid` and `/coffee-chat` will be available.
 
-If you want Word doc or slide deck exports, you'll also need:
+If you want Word doc or slide deck exports from the research study aid, you'll also need:
 - [pandoc](https://pandoc.org/installing.html) for Word documents
 - `pip install python-pptx` for slide decks
 
----
-
-## How to use it
-
-**Analyze a whole folder of transcripts:**
-```
-/research-study-aid /path/to/your/transcripts/
-```
-It will list the files it finds and ask you to confirm before starting.
-
-**Analyze one file:**
-```
-/research-study-aid path/to/interview.csv
-```
-
-**At the start, it will ask you three things:**
-
-1. What was the goal of this research? What questions were you trying to answer?
-2. Do you have any early instincts or findings you want explored?
-3. Do you want the output plain and direct, or more formal?
-
-Your answers shape the whole analysis. The more specific you are, the more useful it gets.
+For video transcription with `/coffee-chat`:
+- `pip install openai-whisper`
 
 ---
 
