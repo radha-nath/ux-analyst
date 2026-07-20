@@ -189,7 +189,7 @@ Triggered by the researcher or offered after insights. Run a critical pass over 
 4. Evidence-to-insight misattribution: check that each participant cited in an insight is actually evidenced by that insight's claim — not a neighboring one
 5. Revised versions: suggested corrections where needed
 
-For every flagged item, restate the relevant theme or insight's name or claim inline — not just a number or label ("Insight 5"). Each finding should be self-contained and readable without flipping back to Stage 3 or 4 to know what's being discussed.
+For every flagged item — across all five categories above — restate the relevant theme or insight's name or claim inline, not just a number or label. For example: write "Insight 5 (banner/invoice-list dual entry point) overclaims..." not "Insight 5 overclaims..." Each finding should be self-contained and readable without flipping back to Stage 3 or 4 to know what's being discussed.
 
 After the audit, say: "Audit complete — findings and fixes are above. Want this turned into a shareable format now (a report, deck, journey map, or quoteboard)?"
 
