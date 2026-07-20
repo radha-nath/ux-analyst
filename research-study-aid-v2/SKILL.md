@@ -70,16 +70,17 @@ When transcripts are provided, run this flow by default. **Pause after each stag
 After loading all transcripts:
 
 1. State: "Loaded N transcripts: [list of participant IDs or filenames]"
-2. Ask the researcher four things in a single message:
+2. Ask the researcher five things in a single message:
    - **Research brief**: What was the goal of this research? What questions were you trying to answer?
    - **Aha moments**: Before I start analysis, what stood out to you from the sessions? Any moments that surprised you, confirmed a hypothesis, or felt important? Write these out before I synthesize — it ensures the most important things aren't lost.
+   - **Session notes**: Beyond the transcripts, do you have your own notes from these sessions — field notes, observations, or a per-participant summary you wrote yourself? These often capture things the transcript alone misses (visual-only moments, tone, context) and should be treated as primary input alongside the transcripts, not held back until asked for.
    - **Additional context**: Are there supplementary data sources I should weave into the synthesis — for example, provider or expert advisory board notes, Sales or CS team feedback, customer or buyer interviews, or prior research? If so, share those files or paste the content and I'll incorporate them alongside the member data, noting the source for each finding.
    - **Output style**: Plain and direct, or more formal? (Default: plain)
 3. Wait for their response before proceeding.
 
 The researcher's aha moments are data. Treat them as a collaborator, not just a requestor. If the analysis later confirms their instincts, say so explicitly. If it points in a different direction, say so directly with evidence and offer it as a tension to explore.
 
-When supplementary sources are provided, read them before beginning participant cards. Keep track of which findings come from which source — member transcripts, provider/expert notes, Sales/CS input, etc. — and attribute each finding to its source throughout the synthesis. Do not blend sources without labeling them. Where multiple sources converge on the same finding, note the convergence explicitly; where they diverge, surface the tension rather than smoothing it over.
+Session notes (the researcher's own notes on these same sessions) are a different thing from supplementary sources (third-party material like provider notes or Sales/CS feedback). Treat session notes as combined raw input alongside the transcripts for coding — they're about the same participants and sessions, just captured differently. Keep supplementary sources separately labeled instead, since those come from a different source entirely: read them before beginning participant cards, track which findings come from which source, and do not blend them into the participant-level coding without attribution. Where multiple sources converge on the same finding, note the convergence explicitly; where they diverge, surface the tension rather than smoothing it over.
 
 ---
 
@@ -107,11 +108,12 @@ Include all meaningful coded units from the session. Aim for coverage over compr
 Note any moments where what the participant said contradicted what they revealed through behavior or story. Flag explicitly — do not smooth over.
 
 **3 Key Observations**
-Three observations about this participant only. No generalization beyond this individual. Every observation must include a quote and timestamp.
+Three observations about this participant only. No generalization beyond this individual. Every observation must include a quote and timestamp. Frame each as a signal for design/product iteration, not just a description — tag it **WORKED WELL** (the design handled this successfully for this participant) or **NEEDS ITERATION** (something worth revisiting), so observations are immediately actionable rather than purely descriptive.
 
 **Rules:**
 - Do not generalize beyond this participant
 - Every claim must include a quote and timestamp
+- Verify each claim traces to one specific, distinct moment in the transcript. Don't blend separate exchanges into a single narrative just because they're topically similar — two moments about "uncertain dollar amounts," for example, can be about entirely different things (a data artifact vs. a genuine open question). If two moments seem related, cite both separately rather than merging them.
 - If the researcher shared an aha moment that relates to this participant, check it against the evidence and note whether the data supports, complicates, or contradicts it
 
 ---
@@ -129,7 +131,9 @@ Combine all approved Participant Summary Cards into a single codebook table. Eac
 | Code Label | Definition | Participant IDs | N | Representative Quote | Timestamp | Avg Intensity | Avg Confidence |
 |---|---|---|---|---|---|---|---|
 
-After producing the codebook, pause: "Here's the codebook across all participants. Review the codes — anything missing, mislabeled, or that should be split or merged? Ready to move to themes when you are."
+After producing the codebook, pause: "Here's the codebook across all participants. Review the codes — anything missing, mislabeled, or that should be split or merged? I can also regroup this into a severity-tiered view (e.g., Critical / High / Medium / Low / Working as intended) if that's more useful for prioritization than the flat table. Ready to move to themes when you are."
+
+If the researcher wants the severity-tiered view, group the same codes into tiers by how urgently each needs design/product attention, with a brief reason for each placement. This sits alongside the flat codebook, not in place of it — both are useful for different purposes.
 
 ---
 
@@ -171,7 +175,7 @@ Convert approved themes into report-ready insights. For each insight:
 
 Where supplementary sources (provider notes, Sales/CS input, etc.) speak to an insight, include their perspective in a clearly labeled sub-section: "Provider perspective:" or "Customer perspective:". Note convergence with member data, and flag divergence as a tension worth resolving.
 
-After producing insights, pause: "Here are the report-ready insights. Want to adjust framing, reorder, or add anything before we're done? I can also run an audit pass — flag potential errors, weak-evidence themes, and contradictions."
+After producing insights, pause: "Here are the report-ready insights. Want to adjust framing, reorder, or add anything before we're done? I can also run an audit pass — flag potential errors, weak-evidence themes, and contradictions — or turn this into a shareable format (a report, deck, journey map, or quoteboard — see Additional Output Formats below)."
 
 ---
 
@@ -184,6 +188,10 @@ Triggered by the researcher or offered after insights. Run a critical pass over 
 3. Contradictory quotes: evidence that cuts against the themes as stated
 4. Evidence-to-insight misattribution: check that each participant cited in an insight is actually evidenced by that insight's claim — not a neighboring one
 5. Revised versions: suggested corrections where needed
+
+For every flagged item, restate the relevant theme or insight's name or claim inline — not just a number or label ("Insight 5"). Each finding should be self-contained and readable without flipping back to Stage 3 or 4 to know what's being discussed.
+
+After the audit, say: "Audit complete — findings and fixes are above. Want this turned into a shareable format now (a report, deck, journey map, or quoteboard)?"
 
 ---
 
