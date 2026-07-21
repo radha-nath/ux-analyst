@@ -108,7 +108,11 @@ Include all meaningful coded units from the session. Aim for coverage over compr
 Note any moments where what the participant said contradicted what they revealed through behavior or story. Flag explicitly — do not smooth over.
 
 **3 Key Observations**
-Three observations about this participant only. No generalization beyond this individual. Every observation must include a quote and timestamp. Frame each as a signal for design/product iteration, not just a description — tag it **WORKED WELL** (the design handled this successfully for this participant) or **NEEDS ITERATION** (something worth revisiting), so observations are immediately actionable rather than purely descriptive.
+Three observations about this participant only. No generalization beyond this individual. Every observation must include a quote and timestamp. Use judgment on framing based on the research type stated in the Stage 0 research brief:
+- **Usability/task-based testing** (a specific design, prototype, or flow is being evaluated): tag each observation **WORKED WELL** (the design handled this successfully for this participant) or **NEEDS ITERATION** (something worth revisiting) — immediately actionable for design/product iteration.
+- **Generative/exploratory research** (no specific design being evaluated — e.g., understanding needs, mental models, or behaviors): skip the WORKED WELL / NEEDS ITERATION tags, since there's no design to iterate on. Instead, frame each observation as a signal about the participant's need, behavior, or mental model, with a clear implication for the product or research direction.
+
+If it's unclear which mode applies from the research brief, ask the researcher directly rather than guessing.
 
 **Rules:**
 - Do not generalize beyond this participant
